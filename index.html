@@ -9,7 +9,7 @@
     <script>
         async function getTextFromBackend() {
             try {
-                const response = await fetch('http://http://20.237.54.24//get-text');
+                const response = await fetch('http://20.237.54.24/get-text');
                 const data = await response.json();
                 document.getElementById('textDisplay').innerText = data.message;
             } catch (error) {
